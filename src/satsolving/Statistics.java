@@ -55,8 +55,9 @@ public class Statistics {
             literalCount += (positiveOccurrence[i] != 0 ? 1 : 0) + (negativeOccurrence[i] != 0 ? 1 : 0);
         }
         System.out.println("Problem line: #vars = " + (positiveOccurrence.length - 1) + ", #clauses = " + numberOfClausesInProblemLine);
-        System.out.println("Clauses count: " + numberOfClauses);
-        System.out.println("Literal count: " + literalCount);
+        System.out.println("Variables count: " + (positiveOccurrence.length - 1));
+        System.out.println("Clauses count:   " + numberOfClauses);
+        System.out.println("Literal count:   " + literalCount);
         System.out.println("Maximal occurrence of a variable: " + mostFrequentlyVariableOccurrence);
         System.out.println("Variables with maximum number of occurrence: " + mostFrequentlyVariables);
         System.out.println("Positive pure literals: " + purePositive);
